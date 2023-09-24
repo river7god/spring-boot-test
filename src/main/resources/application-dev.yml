@@ -1,0 +1,22 @@
+# 数据源配置
+spring:
+    security:
+        user:
+            name: admin
+            password: admin
+    
+mkitpay:
+    host: localhost
+    port: 30000
+KAFKA:
+    KAFKA_SERVER_URL:
+    KAFKA_SERVER_PORT:
+contract:
+    path: /usr/local/rozwork/rozwork-server/pdf/
+    path1: C://company//tmp//signrequest-Node-example//pdf//
+    baseUrl: https://hgz10.signrequest.com/api/v1
+    token: fa26d8d4b3eb4dc9715591e55a95e7be4772d649
+    redirectUrl: http://test.app.rozwork.goldenmob.com/
+    fromEmail: hgz2680987@gmail.com
+    emailSubject: please sign your contract
+    emailMsg: please sign your contract message
