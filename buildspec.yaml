@@ -1,18 +1,9 @@
 version: 0.2
 
 phases:
-  pre_build:
-    commands:
-      - echo Logging in to Docker Hub...
-      - docker login -u river7god -p success123
-
   build:
     commands:
-      - echo Building the Docker image...
-      - docker build -t rozwork-admin:latest .
-      - docker tag rozwork-admin:latest river7god/rozwork-admin:latest
-
-  post_build:
-    commands:
-      - echo Pushing the Docker image to Docker Hub...
-      - docker push river7god/rozwork-admin:latest
+      - mvn clean install
+artifacts:
+  files:
+    - target/*.jar
